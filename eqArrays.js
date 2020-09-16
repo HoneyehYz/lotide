@@ -1,5 +1,5 @@
 // FUNCTION IMPLEMENTATION
-const assertEqual = function(result) {
+/*const assertEqual = function(result) {
   //console.log(result);
   if (result[2]) {
     console.log(`✅✅✅Assertion Passed ${result[0]} = ${result[1]}`);
@@ -7,7 +7,7 @@ const assertEqual = function(result) {
     console.log(`🛑🛑🛑Assertion failed ${result[0]} != ${result[1]}`);
   }
 
-};
+};*/
 
 
 const eqArrays = function(arrOne, arrTwo) {
@@ -25,22 +25,23 @@ const eqArrays = function(arrOne, arrTwo) {
     }
     if(output[2] == true)
     {
-      //console.log("Equal");
+      console.log("Equal");
       return output;
     } else {
-      //console.log("Not Equal");
+      console.log("Not Equal");
       return output;
     }
   } else {
+    console.log("Not Equal");
     output[2] = false
     return output;
   }
 return "hi";
 }
 
-assertEqual(eqArrays([1, 2, 3], [1, 2,3]));
-assertEqual(eqArrays([1, 2, 3], [3, 2, 1]));
-assertEqual(eqArrays(["1", "2", "3"], ["1", "2", "3"]));
-assertEqual(eqArrays(["1", "2", "3"], ["1", "2", 3]));
-//assertEqual(1, 1);
-//assertEqual("bootcamp", "Bootcamp");
+eqArrays([1, 2, 3], [1, 2,3]);
+eqArrays([1, 2, 3], [3, 2, 1]);
+eqArrays(["1", "2", "3"], ["1", "2", "3"]);
+eqArrays(["1", "2", "3"], ["1", "2", 3]);
+//assertEqual(eqArrays(["1", "2", "3"], ["1", "2", 3]));
+

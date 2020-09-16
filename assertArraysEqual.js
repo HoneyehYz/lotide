@@ -10,7 +10,7 @@ const assertEqual = function(result) {
 };
 
 
-const eqArrays = function(arrOne, arrTwo) {
+const assertArraysEqual = function(arrOne, arrTwo) {
   let output = [];
   output[0] = arrOne;
   output[1] = arrTwo;
@@ -38,9 +38,9 @@ const eqArrays = function(arrOne, arrTwo) {
 return "hi";
 }
 
-assertEqual(eqArrays([1, 2, 3], [1, 2,3]));
-assertEqual(eqArrays([1, 2, 3], [3, 2, 1]));
-assertEqual(eqArrays(["1", "2", "3"], ["1", "2", "3"]));
-assertEqual(eqArrays(["1", "2", "3"], ["1", "2", 3]));
+assertEqual(assertArraysEqual([1, 2, 3], [1, 2,3]));
+assertEqual(assertArraysEqual([1, 2, 3], [3, 2, 1]));
+assertEqual(assertArraysEqual(["1", "2", "3"], ["1", "2", "3"]));
+assertEqual(assertArraysEqual(["1", "2", "3"], ["1", "2", 3]));
 //assertEqual(1, 1);
 //assertEqual("bootcamp", "Bootcamp");
