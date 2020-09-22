@@ -1,13 +1,13 @@
 // FUNCTION IMPLEMENTATION
-/*const assertEqual = function(result) {
-  //console.log(result);
-  if (result[2]) {
-    console.log(`✅✅✅Assertion Passed ${result[0]} = ${result[1]}`);
-  } else {
-    console.log(`🛑🛑🛑Assertion failed ${result[0]} != ${result[1]}`);
-  }
+// const assertEqual = function(result) {
+//   //console.log(result);
+//   if (result[2]) {
+//     console.log(`✅✅✅Assertion Passed ${result[0]} = ${result[1]}`);
+//   } else {
+//     console.log(`🛑🛑🛑Assertion failed ${result[0]} != ${result[1]}`);
+//   }
 
-};*/
+// };
 
 
 const eqArrays = function(arrOne, arrTwo) {
@@ -39,9 +39,7 @@ const eqArrays = function(arrOne, arrTwo) {
 return "hi";
 }
 
-eqArrays([1, 2, 3], [1, 2,3]);
-eqArrays([1, 2, 3], [3, 2, 1]);
-eqArrays(["1", "2", "3"], ["1", "2", "3"]);
-eqArrays(["1", "2", "3"], ["1", "2", 3]);
-//assertEqual(eqArrays(["1", "2", "3"], ["1", "2", 3]));
 
+
+
+module.exports =eqArrays; 
