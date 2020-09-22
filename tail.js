@@ -1,11 +1,11 @@
 // FUNCTION IMPLEMENTATION
-const assertEqual = function(arr, newArr) {
-  if (arr.length === newArr.length) {
-    console.log(`✅✅✅Assertion Passed: ${arr.length} === ${newArr.length}`);
-  } else {
-    console.log(`🛑🛑🛑Assertion failed: ${arr.length} !=== ${newArr.length}`);
-  }
-};
+// const assertEqual = function(arr, newArr) {
+//   if (arr.length === newArr.length) {
+//     console.log(`✅✅✅Assertion Passed: ${arr.length} === ${newArr.length}`);
+//   } else {
+//     console.log(`🛑🛑🛑Assertion failed: ${arr.length} !=== ${newArr.length}`);
+//   }
+// };
 
 // TEST CODE
 //assertEqual("Lighthouse Labs", "Bootcamp");
@@ -20,4 +20,4 @@ const tail = function(arr) {
   return newArr;
 };
 
-assertEqual([5,6,7],tail([5,6,7]));
+module.exports = tail;
